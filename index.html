@@ -58,13 +58,13 @@
                 list-style: none;
             }
             .cert-list li {
-                background: rgba(255,255,255,0.06);
-                border: 1px solid rgba(255,255,255,0.15);
+                background: rgba(0,0,0,0.04);
+                border: 1px solid #e0e0e0;
                 border-radius: 4px;
                 padding: 0.45em 1em;
                 font-size: 0.82em;
                 font-weight: 600;
-                color: #c8e6ff;
+                color: #909498;
                 letter-spacing: 0.02em;
             }
             .cert-list li::before {
@@ -75,12 +75,11 @@
             .category-label {
                 display: inline-block;
                 font-size: 0.75em;
-                font-weight: 700;
-                letter-spacing: 0.12em;
+                font-weight: 600;
+                letter-spacing: 0.08em;
                 text-transform: uppercase;
-                color: #a8d8f8;
+                color: #909498;
                 margin-bottom: 0.6em;
-                opacity: 0.9;
             }
 
             /* ── Project cards ─────────────────────────────────── */
@@ -228,6 +227,23 @@
                 <!-- ── Grid ──────────────────────────────────── -->
                 <section class="posts">
 
+                    <!-- NiyamAI -->
+                    <article>
+                        <header>
+                            <span class="category-label">RAG · FastAPI · LLM · Regulatory AI</span>
+                            <h2><a href="https://github.com/astitvabajpai/NiyamAI">NiyamAI<br />RBI Regulation Q&amp;A System</a></h2>
+                        </header>
+                        <a href="https://github.com/astitvabajpai/NiyamAI" class="image fit">
+                            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&auto=format&fit=crop&q=80"
+                                 alt="NiyamAI RBI Regulation Q&A" />
+                        </a>
+                        <p>RAG system for querying RBI regulations in plain English — returns structured answers with citations to exact documents and pages. Hybrid retrieval with FAISS + BM25, cross-encoder reranking, automatic RBI acronym expansion (KYC, NBFC, UPI, PSL), sector-scoped queries, SQLite-backed 24hr cache, SSE streaming, and a /api/metrics endpoint tracking latency, grounding score, and cache hit rate.</p>
+                        <ul class="actions special">
+                            <li><a href="https://github.com/astitvabajpai/NiyamAI" class="button">View Project</a></li>
+                            <li><a href="https://niyamai-p3up.onrender.com/" target="_blank" rel="noopener" class="button">Live Demo</a></li>
+                        </ul>
+                    </article>
+
                     <!-- GNN Citation -->
                     <article>
                         <header>
@@ -241,7 +257,6 @@
                         <p>Applies four GNN architectures (GCN, GAT, GraphSAGE, MLP) to the Cora citation dataset. GAT hit 81.5% test accuracy vs. 42.8% for MLP — confirming graph structure carries critical signal. Features a live inference dashboard with training curves, confusion matrix, and t-SNE graph visualization.</p>
                         <ul class="actions special">
                             <li><a href="https://github.com/astitvabajpai/gnn-citation-project" class="button">View Project</a></li>
-                            <li><a href="https://johncenaqweewewwe-gnn-citation.hf.space" target="_blank" rel="noopener" class="button">Live Demo</a></li>
                         </ul>
                     </article>
 
